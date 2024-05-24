@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="title">Projeto Angular</h1>
+  <div class="button-container mb-3">
+    <button (click)="toggleEndereco()">Endereço</button>
+    <button (click)="toggleSobre()">Sobre</button>
+  </div>
+  <router-outlet></router-outlet>
+  <app-sobre *ngIf="mostrarSobre"></app-sobre>
+  <app-cep *ngIf="mostrarEndereco"></app-cep>
+</div>
